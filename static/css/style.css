@@ -1,0 +1,151 @@
+* {box-sizing: border-box;}
+
+@media (max-width: 100000000000000000000px) {
+    body, header {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+		max-width: 720px;
+        background-color: #272829;
+        background-size: auto auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+header {
+    box-shadow: 0 3px 10px;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    background-color: #3498db;
+    padding: 20px 50px;
+    }
+    
+    .wrap-logo {
+    display: inline-block;
+    align-items: center;
+    }
+    
+    .buttons {
+    margin: 70px;
+}
+
+header a{
+    border: 1px #0099ff solid;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    background:#168ad8;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .1);
+    transition: .3s;
+    }
+    header a:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+    transform: translateY(-7px);
+    }
+
+    nav {
+    display: inline-block;
+    align-items: center;
+    }
+
+.home {
+	display: table;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	box-sizing: inherit;
+	top: 30%;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%) translateY(10px);
+}
+}
+
+.neko {
+    display: table;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    box-sizing: inherit;
+    top: 30%;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%) translateY(10px);
+}
+
+.description {
+    border-radius: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description h1 {
+    color: #2EE59D;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    box-shadow: 0 30px 30px;
+    border: 5px #0000ff solid;
+    padding:1px;
+    align-items: center;
+    display: inline-block;
+    animation-name: moveY;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moveY {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(40px);   
+    }
+}
+
+.buttons {
+    margin: 70px;
+}
+
+.buttons a{
+    text-decoration: none;
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+    background:#0000ff;
+    box-shadow: 0 8px 15px rgba(112, 4, 204);
+    transition: .3s;
+  }
+  .buttons a:hover {
+    background: #0000ff;
+    box-shadow: 0 15px 20px rgba(112, 4, 204);
+    color: white;
+    transform: translateY(-7px);
+  }
